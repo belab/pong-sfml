@@ -4,22 +4,9 @@ Minimalistic implementation of pong with SFML. This project is using cmake and v
 
 ## Setup
 
-### vcpkg
-
-```dos
-git clone https://github.com/Microsoft/vcpkg.git
-.\vcpkg\bootstrap-vcpkg.bat
-.\vcpkg integrate install
-.\vcpkg\vcpkg.exe install sfml:x64-windows
-```
+Run vcpkg_setup.bat.
+For additional dependencies, run ```vcpkg/vcpkg add port <package>```
 
 ### VSCode
 
-Install Microsoft CMake Tools extension in VSCode.
-Add following lines to settings.json:
-
-```text
-"cmake.configureSettings": {
-    "CMAKE_TOOLCHAIN_FILE": "<PATH_TO_VCPKG>/vcpkg/scripts/buildsystems/vcpkg.cmake"
-}
-```
+Install Microsoft CMake Tools extension in VSCode, run configure & build.
